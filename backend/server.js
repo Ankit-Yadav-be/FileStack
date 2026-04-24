@@ -12,7 +12,9 @@ connectDB();
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: "https://file-stack-34wv.vercel.app"
+}));
 app.use(express.json());
 
 // Test Route
